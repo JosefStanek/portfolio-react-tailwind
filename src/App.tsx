@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AboutMe } from "./pages/AboutMe";
+import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { ContactMe } from "./pages/ContactMe";
 import { Projects } from "./pages/Projects";
 import { Navbar } from "./shared/navbar/Navbar";
-import { Footer } from "./shared/Footer";
-export const App = () => {
+import { Footer } from "./shared/footer/Footer";
+export const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Navbar />
