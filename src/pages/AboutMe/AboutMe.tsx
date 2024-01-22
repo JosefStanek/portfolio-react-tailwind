@@ -3,6 +3,7 @@ import { Info } from "./Info";
 import { Skills } from "./Skills";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { CvButton } from "../../shared/CvButton";
 export const AboutMe: React.FC = () => {
   return (
     <div className="mx-10 md:mx-14">
@@ -24,9 +25,7 @@ export const AboutMe: React.FC = () => {
               <button className="bg-red-500 font-bold text-white uppercase px-6 py-2 hover:scale-110 duration-500">
                 <Link to={"/contact"}> kontaktuj mě</Link>
               </button>
-              <button className=" border-2 border-red-500 text-red-500 font-bold uppercase px-6 py-2 hover:scale-110 duration-500 ">
-                CV
-              </button>
+              <CvButton />
             </div>
           </motion.div>
           {/* right */}
