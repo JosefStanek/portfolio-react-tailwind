@@ -1,11 +1,13 @@
 import emailjs from "@emailjs/browser";
 import { SlEnvolopeLetter } from "react-icons/sl";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export const EmailForm: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+
   const sendEmail = (e: React.SyntheticEvent) => {
     e.preventDefault();
 
@@ -29,6 +31,29 @@ export const EmailForm: React.FC = () => {
         setName("");
         setEmail("");
         setMessage("");
+        toast("Odeslání proběhlo v pořádku", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        toast("Něco se pokazilo, opakujte prosím později.", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
       });
   };
   return (

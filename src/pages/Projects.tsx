@@ -18,7 +18,7 @@ export const Projects: React.FC = () => {
             >
               <FaCode />
             </a>
-            <a href="#">
+            <a href="https://portfolio-tsx-react.onrender.com">
               <FaPlayCircle />
             </a>
           </p>
