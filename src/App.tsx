@@ -11,8 +11,8 @@ export const App: React.FC = () => {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Navigate to={"/about"} />} />
-          <Route path="/about" element={<AboutMe />} />
+          <Route path="/" element={<AboutMe />} />
+          {/* <Route path="about" element={<AboutMe />} /> */}
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<ContactMe />} />
         </Routes>
