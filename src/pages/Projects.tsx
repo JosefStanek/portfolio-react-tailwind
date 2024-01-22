@@ -12,7 +12,10 @@ export const Projects: React.FC = () => {
           <img src="./portfolio-tsx.png" alt="" />
           <h6 className="uppercase font-bold text-gray-700">Web Portfolio</h6>
           <p className="py-4 uppercase flex justify-center gap-x-6 text-2xl">
-            <a href="#">
+            <a
+              href="https://github.com/JosefStanek/portfolio-react-tailwind"
+              target="_blank"
+            >
               <FaCode />
             </a>
             <a href="#">

@@ -22,9 +22,18 @@ export const ContactMe: React.FC = () => {
 
           <h6 className="text-md font-bold uppercase">Sociální sítě</h6>
           <div className="flex items-center gap-x-5 py-4">
-            <FaGithub className="p-1 text-4xl text-white bg-gray-700 hover:scale-150 hover:bg-gray-800 duration-500" />
-            <FaLinkedin className="p-1 text-4xl text-white bg-gray-700 hover:scale-150 hover:bg-gray-800 duration-500" />
-            <FaFacebook className="p-1 text-4xl text-white bg-gray-700 hover:scale-150 hover:bg-gray-800 duration-500" />
+            <a href="https://github.com/JosefStanek" target="_blank">
+              <FaGithub className="p-1 text-4xl text-white bg-gray-700 hover:scale-150 hover:bg-gray-800 duration-500" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/josef-stan%C4%9Bk-21982922a/"
+              target="_blank"
+            >
+              <FaLinkedin className="p-1 text-4xl text-white bg-gray-700 hover:scale-150 hover:bg-gray-800 duration-500" />
+            </a>
+            <a href="https://www.facebook.com/josef.destiny" target="_blank">
+              <FaFacebook className="p-1 text-4xl text-white bg-gray-700 hover:scale-150 hover:bg-gray-800 duration-500" />
+            </a>
           </div>
           <h6 className="text-md font-bold uppercase">Kde mě najdeš</h6>
           <p>
