@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { ContactMe } from "./pages/ContactMe";
 import { Projects } from "./pages/Projects";
@@ -9,6 +9,7 @@ export const App: React.FC = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Navigate to={"/about"} />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactMe />} />

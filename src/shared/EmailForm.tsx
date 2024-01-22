@@ -33,8 +33,9 @@ export const EmailForm: React.FC = () => {
   return (
     <form
       onSubmit={sendEmail}
-      className="flex flex-col border-2 py-6 px-10 gap-y-6"
+      className="flex flex-col border-2 py-6 px-10 gap-y-6 max-w-lg"
     >
+      <h6 className="p-2">Kontaktuj mě přímo</h6>
       <div className="flex flex-col">
         <label className="text-gray-700">Jméno</label>
         <input

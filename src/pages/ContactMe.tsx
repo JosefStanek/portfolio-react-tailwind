@@ -1,15 +1,25 @@
 import { EmailForm } from "../shared/EmailForm";
+import { MdEmail } from "react-icons/md";
+import { SocialLinks } from "../shared/footer/SocialLinks";
 export const ContactMe: React.FC = () => {
   return (
-    <section className="mx-8 md:mx-16 ">
-      <h2 className="uppercase text-center text-2xl font-bold py-8 text-gray-700">
-        Kontakt
-      </h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 mb-8">
+    <section className="mx-8 md:mx-16 py-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 mb-8 ">
         <div>
-          <h6 className="text-center uppercase">Kde mě najdeš</h6>
+          <h6 className=" uppercase text-3xl font-bold text-gray-700 mb-4">
+            Pošli mi email.
+          </h6>
+          <p className="flex justify-start items-center gap-2">
+            <span className="inline-block border-2   rounded-sm border-red-600 p-1 bg-red-600 text-white ">
+              <MdEmail className="text-2xl " />
+            </span>
+            josef.stanek389@gmail.com
+          </p>
+          <h6 className=" uppercase text-sm font-bold text-gray-700 mt-6 mb-4">
+            Sociální sítě
+          </h6>
         </div>
+
         <EmailForm />
       </div>
       {/* <form
