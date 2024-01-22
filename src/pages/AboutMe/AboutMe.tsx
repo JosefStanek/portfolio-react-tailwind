@@ -2,6 +2,7 @@ import { FaArrowCircleDown } from "react-icons/fa";
 import { Info } from "./Info";
 import { Skills } from "./Skills";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 export const AboutMe: React.FC = () => {
   return (
     <div className="mx-10 md:mx-14">
@@ -9,7 +10,12 @@ export const AboutMe: React.FC = () => {
       <section>
         <div className="flex flex-col justify-center  md:flex-row md:justify-center  items-center py-10 text-center gap-y-10  gap-x-10 md:gap-x-20 mt-24">
           {/* left */}
-          <div className="text-left flex flex-col gap-y-4">
+          <motion.div
+            className="text-left flex flex-col gap-y-4"
+            initial={{ x: -1000, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+          >
             <h1 className="text-4xl md:text-6xl  font-bold text-gray-700 uppercase">
               Josef Staněk
             </h1>
@@ -22,15 +28,19 @@ export const AboutMe: React.FC = () => {
                 CV
               </button>
             </div>
-          </div>
+          </motion.div>
           {/* right */}
-          <div>
+          <motion.div
+            initial={{ x: 1000 }}
+            animate={{ x: 0 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+          >
             <img
               className=" relative rounded-2xl w-96 h-auto lg:w-auto border-red-500 border-8"
               src="./portret.png"
               alt="portret"
             />
-          </div>
+          </motion.div>
         </div>
         <p className="flex justify-center my-6 text-red-500 text-4xl">
           <FaArrowCircleDown className="animate-bounce" />
