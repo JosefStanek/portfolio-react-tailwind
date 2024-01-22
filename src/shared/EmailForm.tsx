@@ -31,7 +31,7 @@ export const EmailForm: React.FC = () => {
         setName("");
         setEmail("");
         setMessage("");
-        toast("Odeslání proběhlo v pořádku", {
+        toast.success("Odeslání proběhlo v pořádku", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -44,7 +44,7 @@ export const EmailForm: React.FC = () => {
       })
       .catch((err) => {
         console.log(err);
-        toast("Něco se pokazilo, opakujte prosím později.", {
+        toast.error("Něco se pokazilo, opakujte prosím později.", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
