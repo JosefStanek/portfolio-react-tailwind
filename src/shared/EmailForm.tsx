@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import { SlEnvolopeLetter } from "react-icons/sl";
 import { useState } from "react";
 
 export const EmailForm: React.FC = () => {
@@ -33,10 +34,14 @@ export const EmailForm: React.FC = () => {
   return (
     <form
       onSubmit={sendEmail}
-      className="flex flex-col border-2 py-6 px-10 gap-y-6 max-w-lg"
+      className="flex flex-col border-2 py-6 px-10 gap-y-6 lg:gap-y-12 "
     >
-      <h6 className="p-2">Kontaktuj mě přímo</h6>
-      <div className="flex flex-col">
+      <i className="py-2 font-bold uppercase hidden mx-auto lg:inline-block lg:text-6xl">
+        <SlEnvolopeLetter />
+      </i>
+      <h6 className="py-2 font-bold uppercase ">Pošli zprávu přímo</h6>
+
+      <div className="flex flex-col w-full">
         <label className="text-gray-700">Jméno</label>
         <input
           type="text"
