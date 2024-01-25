@@ -6,10 +6,7 @@ export const ErrorPage = () => {
       <p className="text-center text-2xl">Stránka nebyla nalezena.</p>
       <p className="text-center text-2xl ">
         Vrať se na
-        <Link
-          to="/"
-          className="uppercase text-red-500 py-2 px-4 animate-bounce"
-        >
+        <Link to="/" className="uppercase text-red-500 py-2 px-4 ">
           Hlavní stránku.
         </Link>
       </p>
