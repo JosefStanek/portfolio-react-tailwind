@@ -4,12 +4,14 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoHome } from "react-icons/io5";
+import { motion } from "framer-motion";
+
 export const ContactMe: React.FC = () => {
   return (
     <section className="mx-8 md:mx-16 py-8 ">
       <div className="grid grid-cols-1 lg:grid-cols-2 mb-8 gap-y-8 gap-x-8 lg:gap-x-16 ">
         {/* left */}
-        <div className="flex flex-col">
+        <motion.div className="flex flex-col">
           <h6 className="text-2xl font-bold uppercase">Napiš mi</h6>
           <div className="flex items-center gap-x-5 py-4">
             <MdEmail className="p-1 text-4xl   text-white bg-red-500" />
@@ -43,7 +45,7 @@ export const ContactMe: React.FC = () => {
               loading="lazy"
             ></iframe>
           </p>
-        </div>
+        </motion.div>
         {/* right */}
         <EmailForm />
       </div>
