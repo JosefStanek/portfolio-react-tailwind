@@ -13,7 +13,7 @@ export const AboutMe: React.FC = () => {
           {/* left */}
           <motion.div
             className="text-left flex flex-col gap-y-4"
-            initial={{ x: -100, opacity: 0 }}
+            initial={{ x: -10, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeOut", duration: 2 }}
           >
@@ -30,7 +30,7 @@ export const AboutMe: React.FC = () => {
           </motion.div>
           {/* right */}
           <motion.div
-            initial={{ x: 100, opacity: 0 }}
+            initial={{ x: 10, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ ease: "easeIn", duration: 1 }}
           >
