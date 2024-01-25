@@ -35,9 +35,11 @@ export const AboutMe: React.FC = () => {
             transition={{ ease: "easeIn", duration: 1, delay: 0.2 }}
           >
             <img
-              className=" relative rounded-2xl w-96 h-auto lg:w-auto border-red-500 border-8"
+              className="relative rounded-2xl w-96 h-auto lg:w-auto border-red-500 border-8"
               src="./portret.png"
               alt="portret"
+              width="640"
+              height="360"
             />
           </motion.div>
         </div>

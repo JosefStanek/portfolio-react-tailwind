@@ -84,7 +84,13 @@ export const Projects: React.FC = () => {
                 <h6 className="uppercase font-bold text-gray-700 py-4">
                   {project.name}
                 </h6>
-                <img src={project.img} alt={project.name} loading="lazy" />
+                <img
+                  src={project.img}
+                  alt={project.name}
+                  loading="lazy"
+                  width="640"
+                  height="360"
+                />
 
                 {/* overlay */}
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden gap-x-4 grid grid-cols-3 sm:flex sm:justify-center sm:gap-x-8 md:grid 2xl:flex  items-center bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-500 p-2 ">

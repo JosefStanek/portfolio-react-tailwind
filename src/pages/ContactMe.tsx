@@ -47,6 +47,8 @@ export const ContactMe: React.FC = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5127.548798709221!2d14.42591779169431!3d50.01558355512736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9145480ac3ef%3A0x2600af105c20ffe1!2sKam%C3%BDk%2C%20142%2000%20Praha%2012!5e0!3m2!1scs!2scz!4v1705944450640!5m2!1scs!2scz"
               className="w-full h-48 py-4  sm:h-96  "
               loading="lazy"
+              width="640"
+              height="360"
             ></iframe>
           </motion.p>
         </div>
