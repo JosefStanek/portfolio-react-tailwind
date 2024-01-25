@@ -93,7 +93,7 @@ export const Projects: React.FC = () => {
                 />
 
                 {/* overlay */}
-                <div className="absolute top-0 left-0 w-full h-full overflow-hidden gap-x-4 grid grid-cols-3 sm:flex sm:justify-center sm:gap-x-8 md:grid 2xl:flex  items-center bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-500 p-2 ">
+                <div className="absolute top-0 left-0 w-full h-full overflow-hidden gap-x-4 grid grid-cols-3 sm:flex sm:justify-center sm:gap-x-8 md:grid 2xl:flex  items-center bg-black bg-opacity-70 opacity-0 hover:opacity-100 transition-opacity duration-500 p-2 rounded-t-xl">
                   {project.overlay.map((item, index) => {
                     return (
                       <div

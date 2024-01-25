@@ -36,7 +36,7 @@ export const AboutMe: React.FC = () => {
           >
             <img
               className="relative rounded-2xl w-96 h-auto lg:w-auto border-red-500 border-8"
-              src="./portret.png"
+              src="./portret.webp"
               alt="portret"
               width="640"
               height="360"
