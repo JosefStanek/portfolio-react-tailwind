@@ -9,13 +9,13 @@ export const AboutMe: React.FC = () => {
     <div className="mx-10 md:mx-14">
       {/* hero section */}
       <section>
-        <div className="flex flex-col justify-center  md:flex-row md:justify-center  items-center py-10 text-center gap-y-10  gap-x-10 md:gap-x-20 mt-24">
+        <div className="flex flex-col justify-center md:flex-row md:justify-center  items-center py-10 text-center gap-y-10  gap-x-10 md:gap-x-20 mt-24">
           {/* left */}
           <motion.div
             className="text-left flex flex-col gap-y-4"
-            initial={{ y: -10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 1, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1 }}
           >
             <h1 className="text-4xl md:text-6xl  font-bold text-gray-700 uppercase">
               Josef Staněk
@@ -30,9 +30,9 @@ export const AboutMe: React.FC = () => {
           </motion.div>
           {/* right */}
           <motion.div
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ ease: "easeIn", duration: 1, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeOut", duration: 1 }}
           >
             <img
               className="relative rounded-2xl w-96 h-auto lg:w-auto border-red-500 border-8"

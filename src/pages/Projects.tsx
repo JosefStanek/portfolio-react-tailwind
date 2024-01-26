@@ -53,7 +53,8 @@ const projects: {
     name: "tech finder",
     img: "./techfinder_img_projekt.webp",
     github: "https://github.com/JosefStanek/tech_finder",
-    render: "https://mern-tech-finder-frontend.onrender.com/auth",
+    render: undefined,
+    // render: "https://mern-tech-finder-frontend.onrender.com/auth",
     overlay: [
       { icon: <FaHtml5 />, color: "text-red-500", title: "html" },
       { icon: <SiMui />, color: "text-blue-500", title: "mui" },
