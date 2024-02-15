@@ -35,7 +35,7 @@ export const AboutMe: React.FC = () => {
             transition={{ ease: "easeOut", duration: 1 }}
           >
             <img
-              className="relative rounded-2xl w-96 h-auto lg:w-auto border-red-500 border-8"
+              className="relative rounded-2xl w-96 h-auto lg:w-auto border-red-500 border-8 "
               src="./portret.webp"
               alt="portret"
               width="640"
