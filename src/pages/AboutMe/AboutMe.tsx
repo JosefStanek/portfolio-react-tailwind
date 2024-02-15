@@ -9,7 +9,7 @@ export const AboutMe: React.FC = () => {
     <div className="mx-10 md:mx-14">
       {/* hero section */}
       <section>
-        <div className="flex flex-col justify-center md:flex-row md:justify-center  items-center py-10 text-center gap-y-10  gap-x-10 md:gap-x-20 mt-24">
+        <div className="flex flex-col justify-center md:flex-row md:justify-center  items-center py-10 text-center gap-y-10  gap-x-10 md:gap-x-20 mt-24 ">
           {/* left */}
           <motion.div
             className="text-left flex flex-col gap-y-4"
@@ -40,6 +40,7 @@ export const AboutMe: React.FC = () => {
               alt="portret"
               width="640"
               height="360"
+              loading="lazy"
             />
           </motion.div>
         </div>
