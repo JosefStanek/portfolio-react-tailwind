@@ -7,7 +7,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
-
+import { TbBrandReactNative } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const projects: {
@@ -63,6 +63,21 @@ const projects: {
       { icon: <DiMongodb />, color: "text-green-500", title: "mongo db" },
     ],
   },
+  {
+    name: "expense tracker",
+    img: "./expensetracker_img_projekt.webp",
+    github: "https://github.com/JosefStanek/native-exprense-tracker",
+    render: undefined,
+    overlay: [
+      {
+        icon: <TbBrandReactNative />,
+        color: "text-blue-300",
+        title: "React Native",
+      },
+      { icon: <FaNodeJs />, color: "text-green-300", title: "node js" },
+      { icon: <DiMongodb />, color: "text-green-500", title: "mongo db" },
+    ],
+  },
 ];
 
 export const Projects: React.FC = () => {
@@ -81,7 +96,7 @@ export const Projects: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: index * 0.4 }}
             >
-              <div className="relative">
+              <div className="relative flex flex-col justify-center items-center">
                 <h6 className="uppercase font-bold text-gray-700 py-4">
                   {project.name}
                 </h6>

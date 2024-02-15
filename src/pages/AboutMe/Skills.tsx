@@ -10,6 +10,7 @@ import { DiMongodb } from "react-icons/di";
 import { IoLogoVue } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa6";
 import { SiMui } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 export const Skills: React.FC = () => {
   return (
     <section className="lg:w-1/2 lg:mx-auto">
@@ -69,6 +70,10 @@ export const Skills: React.FC = () => {
         <div className="flex flex-col justify-center items-center">
           <SiMui />
           <span>MUI</span>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <TbBrandReactNative />
+          <span>React Native</span>
         </div>
       </div>
 
