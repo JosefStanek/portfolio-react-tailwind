@@ -12,7 +12,7 @@ export const AboutMe: React.FC = () => {
         <div className="flex flex-col justify-center md:flex-row md:justify-center  items-center py-10 text-center gap-y-10  gap-x-10 md:gap-x-20 mt-24 ">
           {/* left */}
           <motion.div
-            className="text-left flex flex-col gap-y-4"
+            className="text-left flex flex-col gap-y-4 min-w-1/2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1 }}
@@ -33,6 +33,7 @@ export const AboutMe: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1 }}
+            className="min-w-1/2"
           >
             <img
               className="relative rounded-2xl w-96 h-auto lg:w-auto border-red-500 border-8 "
