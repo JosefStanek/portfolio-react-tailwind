@@ -1,7 +1,7 @@
 export const CvButton: React.FC = () => {
   const downloadCv = () => {
     const publicUrl: string = import.meta.env.BASE_URL;
-    const pdfUrl = publicUrl + "CV_Josef_Staněk.pdf";
+    const pdfUrl = publicUrl + "CV_Josef_Stanek.pdf";
     window.open(pdfUrl, "_blank");
   };
   return (
